@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> All Products | Arena </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo_real_preview_rev_1.png" width="175px"></a>
+                </div>
+                 <nav>
+                    <ul id ="menuitems">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="Product.html">PRODUCTS</a></li>
+                        <li><a href="About.html">ABOUT</a></li>
+                        <li><a href="account.html">ACCOUNT</a></li>
+                    </ul>
+                </nav>
+                <a href="Cart.html"><img src="images/cart1.2.png" width="30px" height="30px"></a>
+                <img src="images/menu.png" class="menu-icon"
+                 onclick="menutoggle()">
+            </div>
+        </div>
+<!--Cart Items details-->
+<div class="small-container cart-page">
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>SubTotal</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/product1.2.webp">
+                    <div>
+                        <p>Barcalona Home Kit</p>
+                        <small>Price: &#8377;2500/-</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td> <input type="number" value="1"></td>
+            <td>&#8377;2500/-</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/product2.jpg">
+                    <div>
+                        <p>Liverpool Home Kit</p>
+                        <small>Price: &#8377;3000/-</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td> <input type="number" value="1"></td>
+            <td>&#8377;3000/-</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/product3.jpg">
+                    <div>
+                        <p>Paris-Saint-Germain Home Kit</p>
+                        <small>Price: &#8377;5000/-</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td> <input type="number" value="1"></td>
+            <td>&#8377;5000/-</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images/product4.jpg">
+                    <div>
+                        <p>Manchester City Home Kit</p>
+                        <small>Price: &#8377;2000/-</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td> <input type="number" value="1"></td>
+            <td>&#8377;2000/-</td>
+        </tr>
+    </table>
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>SubTotal</td>
+                <td>&#8377;12,500</td>
+            </tr>
+            <tr>
+                <td>Tax(GST of 5%)</td>
+                <td>&#8377;625</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>&#8377;13,125</td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+
+
+
+        
+<!-- -------------footer-------------------- -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col1">
+                <h3>DOWNLOAD OUR APP</h3>
+                <p>Download the app form the play store on Android and app store on IOS</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png" alt="">
+                    <img src="images/app-store.png" alt="">
+                </div>
+            </div>
+            <div class="footer-col2">
+                <img src="images/logo-small.jpg" alt="">
+                <p>Our Main Purpose Of running This Company I To Make The Pleasure And 
+                    Benfits Of Sports Accessible to The Many
+                </p>
+            </div>
+            <div class="footer-col3">
+                <h3>Contact Us At</h3>
+                <ul>
+                    <li>Telephone: 0522-852963</li>
+                    <li>Mobile: 9147412589</li>
+                    <li>Alternative: 6415739514</li>
+                </ul>
+            </div>
+            <div class="footer-col4">
+                <h3>Follow Us On</h3>
+                <ul>
+                    <li>FaceBook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2022 - Ecommerce Site</p>
+    </div>
+</div>
+<!-----js for toogle menu----------->
+<script>
+
+    var menuitems = document.getElementById("menuitems");
+    
+    menuitems.style.maxHeight="0px";
+
+    function menutoggle()
+    {
+        if(menuitems.style.maxHeight == "0px")
+        {
+            menuitems.style.maxHeight="200px";
+        }
+        else
+        {
+            menuitems.style.maxHeight="0px";
+        }
+    }              
+</script>
+
+</body>
+</html>
